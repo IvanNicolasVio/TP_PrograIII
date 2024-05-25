@@ -1,0 +1,14 @@
+[
+    {
+        "id": "000003",
+        "sabor": "Americana",
+        "precio": 1600,
+        "tipo": "Crema",
+        "vaso": "Cucurucho",
+        "stock": "2",
+        "email": "Ivan",
+        "fecha": "17-05-2024",
+        "numeroDePedido": 4398628,
+        "causa": "soy malo"
+    }
+]
