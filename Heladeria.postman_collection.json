@@ -1,0 +1,608 @@
+{
+	"info": {
+		"_postman_id": "66546065-123b-47e9-bb7b-d4354c1d5d3b",
+		"name": "Heladeria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29666629"
+	},
+	"item": [
+		{
+			"name": "HeladeriaAlta.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "Chocolate Suizo",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Crema",
+							"type": "text"
+						},
+						{
+							"key": "vaso",
+							"value": "Plastico",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/vioiv/OneDrive/Escritorio/frutilla al agua.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=alta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "alta"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HeladoConsultar.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "Frutilla",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Agua",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AltaVenta.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "Lautaro",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "Anana",
+							"type": "text"
+						},
+						{
+							"key": "vaso",
+							"value": "Plastico",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Agua",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/vioiv/OneDrive/Escritorio/comprador.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=venta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "venta"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Cantidad Vendida (4A)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta a&dia=15-05-2024",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta a"
+						},
+						{
+							"key": "dia",
+							"value": "15-05-2024"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar X Usuario (4B)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta b&usuario=Lucia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta b"
+						},
+						{
+							"key": "usuario",
+							"value": "Lucia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar X Fechas (4C)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta c&fechaUno=17-05-2024&fechaDos=20-05-2024",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta c"
+						},
+						{
+							"key": "fechaUno",
+							"value": "17-05-2024"
+						},
+						{
+							"key": "fechaDos",
+							"value": "20-05-2024"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar X Sabor (4D)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta d&sabor=Anana",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta d"
+						},
+						{
+							"key": "sabor",
+							"value": "Anana"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar X Vaso (4E)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta e&vaso=Nose",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta e"
+						},
+						{
+							"key": "vaso",
+							"value": "Nose"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarVenta.php",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pedido",
+							"value": "8399379",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Laureano",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "Dulce de leche",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Crema",
+							"type": "text"
+						},
+						{
+							"key": "vaso",
+							"value": "Plastico",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=modificar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "modificar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DevolverHelado.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "npedido",
+							"value": "587902",
+							"type": "text"
+						},
+						{
+							"key": "causa",
+							"value": "soy malo",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/vioiv/OneDrive/Escritorio/compradorenojado.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=devolver",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "devolver"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrarVenta.php",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=borrar&npedido=6695143",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "borrar"
+						},
+						{
+							"key": "npedido",
+							"value": "6695143"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AltaVentaConCupon.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "Lautaro",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "Chocolate Suizo",
+							"type": "text"
+						},
+						{
+							"key": "vaso",
+							"value": "Plastico",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Crema",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/vioiv/OneDrive/Escritorio/comprador.jpg"
+						},
+						{
+							"key": "cupon",
+							"value": "4398628",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=venta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "venta"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devoluciones cn Cupon(9a)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta 9a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta 9a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devoluciones cn Cupon(9b)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta 9b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta 9b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devoluciones cn Cupon(9c)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Programacion%20III%20-%202024/Simulacro/?action=consulta 9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion%20III%20-%202024",
+						"Simulacro",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "consulta 9c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
